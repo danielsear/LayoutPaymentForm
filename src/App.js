@@ -6,7 +6,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-     <Product/>
+      <Product />
     </React.Fragment>
   );
 }
