@@ -1,10 +1,14 @@
 import React from 'react';
+import { Typography, CssBaseline } from '@material-ui/core';
 
-import './App.css';
+
 
 function App() {
   return (
-      <div></div> 
+    <React.Fragment>
+      <CssBaseline />
+      <div><Typography variant='h1'>Meu App Rodando</Typography></div>
+    </React.Fragment>
   );
 }
 
