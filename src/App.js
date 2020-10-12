@@ -1,13 +1,12 @@
 import React from 'react';
-import { Typography, CssBaseline } from '@material-ui/core';
-
-
+import { CssBaseline } from '@material-ui/core';
+import Product from './pages/Product';
 
 function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <div><Typography variant='h1'>Meu App Rodando</Typography></div>
+      <Product/>
     </React.Fragment>
   );
 }
