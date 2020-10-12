@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@material-ui/core';
 import Product from './pages/Product';
 
 function App() {
