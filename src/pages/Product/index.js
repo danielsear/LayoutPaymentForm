@@ -1,53 +1,15 @@
 import React from "react";
-import { Box, Divider, Typography } from "@material-ui/core";
-import iphone from "../../assets/img/iphone.png";
-import { Star } from "@material-ui/icons";
-import {Page,PageContainer, ProductContainer, ProductImageContainer, ProductImage, ProductContent, Title} from './styles'
-import {iphone as product} from '../../data'
+import { Box } from "@material-ui/core";
+import { Page, PageContainer } from "./styles";
+import ProductComponent from "./Components/Product/index";
 
 export default function Product() {
   return (
     <Page>
       <PageContainer>
-      <Box>
-      <ProductContainer>
-        <ProductImageContainer>
-          <ProductImage src={iphone} width="400px" height="400px" />
-        </ProductImageContainer>
-        <ProductContent>
-          <Title>
-           {product.title}
-          </Title>
-          <Box display="flex" margin=" 2rem 0 2rem 0">
-            <Box marginRight="30px" display="flex">
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-            <Typography>({product.numberOfAvaliations})</Typography>
-            </Box>
-            <Box>
-              <Typography>(Cód.{product.code})</Typography>
-            </Box>
-          </Box>
-          <Box margin=" 2rem 0 2rem 0">
-            <Typography>
-              {product.description}
-            </Typography>
-          </Box>
-          <Box display="flex" flexDirection="column">
-            <Typography style={{ margin: "2rem 0 2rem 0" }} component="a">
-              mais informações
-            </Typography>
-            <Divider />
-            <Typography style={{ margin: "2rem 0 2rem 0" }} component="a">
-              política de troca e devolução
-            </Typography>
-          </Box>
-        </ProductContent>
-      </ProductContainer>
-      </Box>
+        <Box>
+          <ProductComponent />
+        </Box>
       </PageContainer>
     </Page>
   );
